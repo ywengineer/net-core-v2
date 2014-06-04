@@ -34,7 +34,7 @@ CLASS='com.handee.Context'
 
 # run it
 # JAVA_OPTS="-server -XX:PermSize=64m -XX:MaxPermSize=128m -verbose:gc -XX:+PrintGCDetails -Xms128m -Xmx256m -Xloggc:logs/gc.log"
-JAVA_OPTS="-server -Djava.net.preferIPv4Stack=true -Xms512m -Xmx512m -XX:PermSize=64M -XX:MaxPermSize=128M -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=7 -XX:GCTimeRatio=19 -Xnoclassgc"
+JAVA_OPTS="-server -Djava.net.preferIPv4Stack=true -Xms512m -Xmx512m -XX:PermSize=64M -XX:MaxPermSize=128M -XX:SurvivorRatio=8 -XX:MaxTenuringThreshold=7 -XX:+HeapDumpOnOutOfMemoryError -XX:GCTimeRatio=19 -Xnoclassgc"
 JAVA_OPTS=${JAVA_OPTS}:" -verbose:gc -XX:+UseParNewGC -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCApplicationConcurrentTime -XX:+PrintGCApplicationStoppedTime -Xloggc:logs/gc.log"
 
 # log config
